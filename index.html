@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/diq1hkqff/image/upload/v1694454112/Shopify_logo_2018.svg_tslw3x.png" class="shopify-logo" /></a>
+        <span class="start-free-trail-md ml-auto">Start free trail</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-light ml-0" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                <li class="nav-item dropdown">
+                    <a class="nav-text nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Solutions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link nav-text" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-text nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="login-div">
+            <p class="log-in">Log in</p>
+            <p class="start-free-trail start-free-trail-div">Start free trail</p>
+        </div>
+    </nav>
+    <div class="buttons">
+        <button class="main-button" onclick="displayBasic()">
+            Basic
+        </button>
+        <button class="main-button" onclick="displayShopify()">
+            Shopify
+        </button>
+        <button class="main-button" onclick="displayAdvanced()">
+            Advanced
+        </button>
+    </div>
+    <div class="sub-div" id="basic-info">
+        <div class="amount-div">
+            <p class="amount"><span><img src="https://res.cloudinary.com/diq1hkqff/image/upload/v1694493974/rupee-indian_u945tz.png" class="rupee-logo1" /></span>1,994</p>
+            <div class="inr-mo">
+                <p class="inr">INR</p>
+                <p class="mo">/mo</p>
+            </div>
+        </div>
+        <div class="get-your">
+            <p class="get-your-para">Get your first 3 months for <span><img src="https://res.cloudinary.com/diq1hkqff/image/upload/v1694493974/rupee-indian_u945tz.png" class="rupee-logo" /></span>20/mo</p>
+        </div>
+        <div class="bottom-div">
+            <p class="whats">What's included on Basic</p>
+            <p><i class="fi fi-br-check check-mark"></i> Basic reports</p>
+            <p><i class="fi fi-br-check check-mark"></i> Upto 1,000 inventory locations</p>
+            <p><i class="fi fi-br-check check-mark"></i> 2 Staff accounts</p>
+        </div>
+        <button class="try-btn">Try for free</button>
+    </div>
+    <div class="sub-div" id="shopify-info">
+        <div class="amount-div">
+            <p class="amount"><span><img src="https://res.cloudinary.com/diq1hkqff/image/upload/v1694493974/rupee-indian_u945tz.png" class="rupee-logo1" /></span>7,447</p>
+            <div class="inr-mo">
+                <p class="inr">INR</p>
+                <p class="mo">/mo</p>
+            </div>
+        </div>
+        <div class="get-your">
+            <p class="get-your-para">Get your first 3 months for <span><img src="https://res.cloudinary.com/diq1hkqff/image/upload/v1694493974/rupee-indian_u945tz.png" class="rupee-logo" /></span>20/mo</p>
+        </div>
+        <div class="bottom-div">
+            <p class="whats">What's included on Shopify</p>
+            <p><i class="fi fi-br-check check-mark"></i> Pofessional reports</p>
+            <p><i class="fi fi-br-check check-mark"></i> Upto 1,000 inventory locations</p>
+            <p><i class="fi fi-br-check check-mark"></i> 5 Staff accounts</p>
+        </div>
+        <button class="try-btn">Try for free</button>
+    </div>
+    <div class="sub-div" id="advanced-info">
+        <div class="amount-div">
+            <p class="amount"><span><img src="https://res.cloudinary.com/diq1hkqff/image/upload/v1694493974/rupee-indian_u945tz.png" class="rupee-logo1" /></span>30,164</p>
+            <div class="inr-mo">
+                <p class="inr">INR</p>
+                <p class="mo">/mo</p>
+            </div>
+        </div>
+        <div class="get-your">
+            <p class="get-your-para">Get your first 3 months for <span><img src="https://res.cloudinary.com/diq1hkqff/image/upload/v1694493974/rupee-indian_u945tz.png" class="rupee-logo" /></span>20/mo</p>
+        </div>
+        <div class="bottom-div">
+            <p class="whats">What's included on Advanced</p>
+            <p><i class="fi fi-br-check check-mark"></i> Custom report builder</p>
+            <p><i class="fi fi-br-check check-mark"></i> Upto 1,000 inventory locations</p>
+            <p><i class="fi fi-br-check check-mark"></i> 15 Staff accounts</p>
+        </div>
+        <button class="try-btn">Try for free</button>
+    </div>
+    <div class="pay-mon-yealy-div">
+        <p class="pay-mon">Pay monthly</p>
+        <p class="pay-year">Pay yearly(Save 25%)</p>
+    </div>
+    <div class="bottom-cards">
+        <div class="basic card">
+            <h1 class="border-text mr-auto ml-auto">MOST POPULAR</h1>
+            <p class="basic-heading basic-text">Basic</p>
+            <p class="basic-heading for-ind">FOR INDIVIDUALS AND SMALL BUSINESSES</p>
+            <p class="basic-heading every">Everything you need to create your store, ship poducts and process payments.</p>
+            <div class="amount-div">
+                <p class="amount"><span><img src="https://res.cloudinary.com/diq1hkqff/image/upload/v1694493974/rupee-indian_u945tz.png" class="rupee-logo1" /></span>1,994</p>
+                <div class="inr-mo">
+                    <p class="inr">INR</p>
+                    <p class="mo">/mo</p>
+                </div>
+            </div>
+            <div class="get-your">
+                <p class="get-your-para">Get your first 3 months for <span><img src="https://res.cloudinary.com/diq1hkqff/image/upload/v1694493974/rupee-indian_u945tz.png" class="rupee-logo" /></span>20/mo</p>
+            </div>
+            <div class="bottom-div">
+                <p class="whats">What's included on Basic</p>
+                <p><i class="fi fi-br-check check-mark"></i> Basic reports</p>
+                <p><i class="fi fi-br-check check-mark"></i> Upto 1,000 inventory locations</p>
+                <p><i class="fi fi-br-check check-mark"></i> 2 Staff accounts</p>
+            </div>
+            <button class="try-btn">Try for free</button>
+        </div>
+        <div class="card shopify ">
+            <p class="basic-heading">Shopify</p>
+            <p class="basic-heading for-ind">FOR SMALL BUSINESSES</p>
+            <p class="basic-heading every">Level up your business with professional reporting and more staff acconts</p>
+            <div class="amount-div">
+                <p class="amount"><span><img src="https://res.cloudinary.com/diq1hkqff/image/upload/v1694493974/rupee-indian_u945tz.png" class="rupee-logo1" /></span>7,447</p>
+                <div class="inr-mo">
+                    <p class="inr">INR</p>
+                    <p class="mo">/mo</p>
+                </div>
+            </div>
+            <div class="get-your">
+                <p class="get-your-para">Get your first 3 months for <span><img src="https://res.cloudinary.com/diq1hkqff/image/upload/v1694493974/rupee-indian_u945tz.png" class="rupee-logo" /></span>20/mo</p>
+            </div>
+            <div class="bottom-div">
+                <p class="whats">What's included on Shopify</p>
+                <p><i class="fi fi-br-check check-mark"></i> Pofessional reports</p>
+                <p><i class="fi fi-br-check check-mark"></i> Upto 1,000 inventory locations</p>
+                <p><i class="fi fi-br-check check-mark"></i> 5 Staff accounts</p>
+            </div>
+            <button class="try-btn">Try for free</button>
+        </div>
+        <div class="advanced card">
+            <p class="basic-heading">Advanced</p>
+            <p class="basic-heading for-ind">FOR MEDUIM TO LARGE BUSINESSES</p>
+            <p class="basic-heading every">Get the best of shopify with custom reporting and lowest transaction fees</p>
+            <div class="amount-div">
+                <p class="amount"><span><img src="https://res.cloudinary.com/diq1hkqff/image/upload/v1694493974/rupee-indian_u945tz.png" class="rupee-logo1" /></span>30,164</p>
+                <div class="inr-mo">
+                    <p class="inr">INR</p>
+                    <p class="mo">/mo</p>
+                </div>
+            </div>
+            <div class="get-your">
+                <p class="get-your-para">Get your first 3 months for <span><img src="https://res.cloudinary.com/diq1hkqff/image/upload/v1694493974/rupee-indian_u945tz.png" class="rupee-logo" /></span>20/mo</p>
+            </div>
+            <div class="bottom-div">
+                <p class="whats">What's included on Advanced</p>
+                <p><i class="fi fi-br-check check-mark"></i> Custom report builder</p>
+                <p><i class="fi fi-br-check check-mark"></i> Upto 1,000 inventory locations</p>
+                <p><i class="fi fi-br-check check-mark"></i> 15 Staff accounts</p>
+            </div>
+            <button class="try-btn">Try for free</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
